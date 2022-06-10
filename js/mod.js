@@ -1,7 +1,7 @@
 var mod = {
-    primaryName: "ω",
-    secondaryName: "Engine",
-    version: "1.0.0",
+    primaryName: "Ordinal",
+    secondaryName: "-Layers",
+    version: "α.0",
     engineVer: "0.2.3 P1", //DO NOT MODIFY
     debugMode: true,
     themes: [
@@ -13,44 +13,15 @@ var mod = {
         ["eXPerience", "css/themes/experience.css"]
     ],
     layerNames: [
-        ["Ω-Lλγers",
+        ["Ordinal-Layers",
         [
-            "αβγδεζηθικλμνξοπρστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ",
+            "+×^#≬,[⊑□\⋱¬♦₁RεωΩxX(.A/⽥θᔦˣÇƱ⊞⊗○𝖀Ꙍ☉ƒ‡ῼὯΨⓍͳ֍𝕰⍰OP␠₱•ρ—⋻⊖₣⊕៳лｃດ&⬲:△㎙已☐・⍏ヘキ⟴þŌ刁口○ብჲユ一௫个Ң⊂ᑂಉ✫☆◻Eる১▵ᗜᗚᗌ⋑⟡悤ⱵB℺⋃πΠ♻⦽◎|⤄⧭√∢∐∏∫∨⅀⊖⊠⟅❃☾⟁㎁🄰ල∑⋂÷▨∮◬⋁ᚖ",
             "ψϝϛͱϻϙͳϸ",
             ["<span class='flipped-v'>Ω</span>", "<span class='flipped-v'>Ω</span><sup>2</sup>","<span class='flipped-v'>Ω</span><sup>3</sup>","<span class='flipped-v'>Ω</span><sup>2<sup>2</sup></sup>"]
-        ]],
-        ["Alphabet",
-        [
-            "abcdefghijklmnopqrstuvwxyz",
-            "123456789",
-            "ABCD"
-        ]],
-        ["Symbols",
-        [
-            '!"£$%^&*;:@',
-            "<,[{}].>",
-            "+×÷^"
-        ]],
-        ["Binary",
-        [
-            '01',
-            "01",
-            "2345"
-        ]],
-        ["Random",
-        [
-            Utils.createRandomWord(10, new Random(Date.now()).nextInt()),
-            Utils.createRandomWord(10, new Random(Math.floor(Date.now()/2)).nextInt()),
-            [Utils.createRandomWord(2, new Random(Math.floor(Date.now()/3)).nextInt()),Utils.createRandomWord(3, new Random(Math.floor(Date.now()/4)).nextInt()),Utils.createRandomWord(4, new Random(Math.floor(Date.now()/5)).nextInt()),Utils.createRandomWord(5, new Random(Math.floor(Date.now()/6)).nextInt())]
         ]]
     ],
     fonts: [
-        ["Monospace Typewriter", "css/fonts/typespace.css"],
-        ["Comic Sans", "css/fonts/comic.css"],
-        ["Arial", "css/fonts/arial.css"],
         ["Roboto", "css/fonts/roboto.css"],
-        ["Comfortaa", "css/fonts/comfortaa.css"],
-        ["Minecraft", "css/fonts/minecraft.css"],
     ],
     saves: [
         ["Save 1", ""],
