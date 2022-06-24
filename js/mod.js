@@ -15,9 +15,9 @@ var mod = {
     layerNames: [
         ["Ordinal-Layers",
         [
-            "+×^#≬,[⊑□\⋱¬♦₁RεωΩxX(.A/⽥θᔦˣÇƱ⊞⊗○𝖀Ꙍ☉ƒ‡ῼὯΨⓍͳ֍𝕰⍰OP␠₱•ρ—⋻⊖₣⊕៳лｃດ&⬲:△㎙已☐・⍏ヘキ⟴þŌ刁口○ብჲユ一௫个Ң⊂ᑂಉ✫☆◻Eる১▵ᗜᗚᗌ⋑⟡悤ⱵB℺⋃πΠ♻⦽◎|⤄⧭√∢∐∏∫∨⅀⊖⊠⟅❃☾⟁㎁🄰ල∑⋂÷▨∮◬⋁ᚖ",
+            "+×^#≬,[⊑□\⋱¬♦₁RεωΩxX(.A/⽥θᔦˣÇƱ⊞⊗○𝖀Ꙍ☉ƒ‡ῼὯΨⓍͳ֍𝕰⍰OP␠₱•ρ—⋻⊖₣⊕៳лｃດ&⬲:△㎙已☐・⍏ヘキ⟴þŌ刁口○ብჲユ一௫个Ң⊂ᑂಉ✫☆◻Eる১▵ᗜᗚᗌ⋑⟡悤ⱵB℺⋃πΠ♻⦽◎|⤄⧭√∢∐∏∫∨⅀⊖⊠⟅❃☾⟁㎁🄰ල∑⋂÷▨∮◬⋁ᚖ⧈▥◒🟔🟃🟇🟈Φ▩❖×🞡☩◨⋀ჯф〉ተDع尸ϝ⬓⨎⛎㎋α↓µTNI⯐Я∀aቄⅠιѺ◴ᎧकrL€Ѩσi!?_ख123456789⛋",
             "ψϝϛͱϻϙͳϸ",
-            ["<span class='flipped-v'>Ω</span>", "<span class='flipped-v'>Ω</span><sup>2</sup>","<span class='flipped-v'>Ω</span><sup>3</sup>","<span class='flipped-v'>Ω</span><sup>2<sup>2</sup></sup>"]
+            ["<span class='flipped-v'>Ω</span>", "<span class='flipped-v'>Ω</span><sup>2</sup>","<span class='flipped-v'>Ω</span><sup>3</sup>","<span class='flipped-v'>Ω</span><sup>2<sup>2</sup></sup>"]aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
         ]]
     ],
     fonts: [
