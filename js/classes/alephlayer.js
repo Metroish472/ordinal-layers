@@ -4,14 +4,14 @@ class AlephLayer
     {
         this.aleph = new Decimal(0);
         this.upgrades = {
-            alephGain: new AlephUpgrade("Increase your aleph gain", level => Decimal.pow(1.215, level).mul(100),
+            alephGain: new AlephUpgrade("Increase your operator gain", level => Decimal.pow(1.215, level).mul(100),
                 level => Decimal.pow(1.2 + game.restackLayer.permUpgrades.aleph.apply(), level)),
-            alephGainBonus: new AlephUpgrade("Get a Bonus to aleph gain",
+            alephGainBonus: new AlephUpgrade("Get a Bonus to operator gain",
                 level => Utils.createValueDilation(Decimal.pow(1000, level).mul(1000), 0.02),
                 level => new Decimal(1).add(level.mul(0.1)).mul(Decimal.pow(1.05, Decimal.max(level.sub(10), 0))), {
                     getEffectDisplay: effectDisplayTemplates.percentStandard(3, "", " %", 0)
                 }),
-            alephBoost: new AlephUpgrade("Gain more aleph based on the log(ℵ) you have",
+            alephBoost: new AlephUpgrade("Gain more aleph based on the log(Operators) you have",
                 level => new Decimal(1e6).pow(Decimal.pow(1.5, level)),
                 level => new Decimal(1).add(Decimal.max(0, game.alephLayer.aleph).add(1).log10().mul(level).mul(0.05)).pow(2.5)),
             deltaBoost: new AlephUpgrade("Gain more &delta;",
@@ -27,7 +27,7 @@ class AlephLayer
                 level => Decimal.pow(2, level), {
                     maxLevel: 3
                 }),
-            alephBoost2: new AlephUpgrade("Gain more aleph based on the log(log(&alpha;)) you have",
+            alephBoost2: new AlephUpgrade("Gain more aleph based on the log(log(+)) you have",
                 level => Utils.createValueDilation(Decimal.pow(1e30, level).mul(1e100), 0.01),
                 level => game.layers[0] ? Decimal.pow(new Decimal(1.1).add(level.mul(0.1)), Decimal.max(0, game.layers[0].resource).add(1).log10().add(1).log10()) : new Decimal(1)),
             betterBetaFormula: new AlephUpgrade("The &beta; Prestige Formula is better",
