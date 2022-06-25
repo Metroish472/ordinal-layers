@@ -59,7 +59,7 @@ class Challenge
             case CHALLENGE_REWARD_PRESTIGEREWARD:
                 return "Prestige Reward of Layer " + PrestigeLayer.getNameForLayer(this.cfg.layerid) + " is x" + functions.formatNumber(this.applyReward(), 2, 2) + " higher";
             case CHALLENGE_REWARD_GENMULTI_ABS:
-                return "All Alpha Generators are x" + functions.formatNumber(this.applyReward(), 2, 2) + " stronger";
+                return "All + Generators are x" + functions.formatNumber(this.applyReward(), 2, 2) + " stronger";
             case CHALLENGE_REWARD_RESTACK:
                 return "Restack gain is multiplied by x" + functions.formatNumber(this.applyReward(), 2, 2);
             default:
