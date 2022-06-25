@@ -29,7 +29,7 @@ class ReStackLayer
                     maxLevel: 2,
                     getEffectDisplay: effectDisplayTemplates.numberStandard(2, "^")
                 }),
-            aleph: new RestackLayerUpgrade("\"Increase your Aleph gain\" Upgrade scales better",
+            aleph: new RestackLayerUpgrade("\"Increase your Operator gain\" Upgrade scales better",
                 level => this.getPermUpgradeCost(),
                 level => 0.005 * level.toNumber(), {
                     maxLevel: 2,
@@ -293,7 +293,7 @@ class ReStackLayer
     {
         this.restack(false);
         game.metaLayer.active = true;
-        functions.createNotification(new Notification(NOTIFICATION_SPECIAL, "Meta has given you infinite power, its time to make more layers!"));
+        functions.createNotification(new Notification(NOTIFICATION_SPECIAL, "At last, you have felt the power of Ordinalize. Prepare for your journey of WAY more layers of Ordinal Levels, because they're about to go beyond Never, and even ENDLESS!"));
     }
 
     tick(dt)
