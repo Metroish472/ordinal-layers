@@ -1,7 +1,7 @@
 var mod = {
     primaryName: "Ordinal",
     secondaryName: "-Layers",
-    version: "β.0",
+    version: "β.1",
     engineVer: "0.2.3 P1", //DO NOT MODIFY
     debugMode: true,
     themes: [
