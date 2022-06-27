@@ -11,7 +11,7 @@ Vue.component("endgame-tab", {
     },
     template: `<div id="endgame">
     <h2><span class="omega">You</span> Win!</h2>
-    <p>You beat the game in <span class="omega">{{timeSpent}}</span><br>
+    <p>You reached the ultimate goal of Infinity-Insta-Bility in <span class="omega">{{timeSpent}}</span><br>
     <button onclick="game.settings.tab = 'Layers'">Continue</button> <button @click="hardResetGame()">Wipe Game</button></p>
 </div>`
 })
