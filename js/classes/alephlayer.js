@@ -11,10 +11,10 @@ class AlephLayer
                 level => new Decimal(1).add(level.mul(0.1)).mul(Decimal.pow(1.05, Decimal.max(level.sub(10), 0))), {
                     getEffectDisplay: effectDisplayTemplates.percentStandard(3, "", " %", 0)
                 }),
-            alephBoost: new AlephUpgrade("Gain more aleph based on the log(Operators) you have",
+            alephBoost: new AlephUpgrade("Gain more operators based on the log(Operators) you have",
                 level => new Decimal(1e6).pow(Decimal.pow(1.5, level)),
                 level => new Decimal(1).add(Decimal.max(0, game.alephLayer.aleph).add(1).log10().mul(level).mul(0.05)).pow(2.5)),
-            deltaBoost: new AlephUpgrade("Gain more &delta;",
+            deltaBoost: new AlephUpgrade("Gain more #",
                 level => Decimal.pow(1e5, level).mul(1e3),
                 level => Decimal.pow(10, level), {
                     maxLevel: 4
