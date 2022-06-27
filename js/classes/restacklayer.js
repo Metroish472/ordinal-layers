@@ -63,7 +63,7 @@ class ReStackLayer
                         maxLevel: 1,
                         getEffectDisplay: effectDisplayTemplates.numberStandard(2, "^")
                     }),
-                new RestackLayerUpgrade("Resource Multiplier Upgrades are stronger based on time spent this ReStack",
+                new RestackLayerUpgrade("Resource Multiplier Upgrades are stronger based on time spent this Hypercompution",
                 level => new Decimal(1e50),
                 level => new Decimal(1).add(Decimal.pow(2, level).sub(1).mul(this.timeSpent / 1000)),{
                         maxLevel: 1,
@@ -120,7 +120,7 @@ class ReStackLayer
                     }),
             ],
             [
-                new RestackLayerUpgrade("Time since ReStack no longer resets",
+                new RestackLayerUpgrade("Time since Hypercompute no longer resets",
                     level => new Decimal("1ee100"),
                     level => level.gt(0), {
                         maxLevel: 1,
@@ -235,7 +235,7 @@ class ReStackLayer
 
     respecUpgradeTree()
     {
-        if(game.settings.confirmations && !confirm("Are you sure you want to respec? This will do a ReStack without reward and you won't get any Layer Coins back."))
+        if(game.settings.confirmations && !confirm("Are you sure you want to respec? This will Hypercompute without reward and you won't get any Layer Coins back."))
         {
             return;
         }
@@ -251,7 +251,7 @@ class ReStackLayer
 
     restack(reward = true)
     {
-        if(reward && game.settings.confirmations && !confirm("Are you sure you want to ReStack? You will lose all progress in exchange for Layer Coins."))
+        if(reward && game.settings.confirmations && !confirm("Are you sure you want to Hypercompute? You will lose all progress in exchange for Layer Coins."))
         {
             return;
         }
