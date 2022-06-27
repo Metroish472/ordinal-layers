@@ -99,7 +99,7 @@ const game = {
         new Achievement("Upgradalicious", "Max all the non-ordinalized upgrades", "↑<sub>↑<sub>↑</sub></sub>", () => (Object.values(game.restackLayer.permUpgrades).filter(u => u.level.gt(0)).length + Object.values(game.restackLayer.permUpgrades).filter(u => u.level.gt(1)).length) == 12),
         new Achievement("Idle^2", "Buy the ordinalized upgrade", "↑<sub>OL<sub>", () => game.restackLayer.metaUpgrade.level.gte(1)),
         new Achievement("No turning back", "Ordinalize and be reborn", "OL", () => game.metaLayer.active),
-        new Achievement("Endgame", "Reach layer 1.8e308 (Ordinal Level ∞) and finish "+mod.primaryName+mod.secondaryName, "∾", () => game.metaLayer.layer.gte(Infinities[0])),
+        new Achievement("Infinity-Insta-Bility", "Reach layer 1.8e308 (Ordinal Level ∞) and finish "+mod.primaryName+mod.secondaryName, "∾", () => game.metaLayer.layer.gte(Infinities[0])),
     ],
     secretAchievements: [
         new Achievement("A very long wait...", "Have a game with over 3 months of time", "...", () => game.timeSpent > 50803200),
