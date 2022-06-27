@@ -4,7 +4,7 @@ Vue.component("news-ticker", {
         return {
             messages: [
                 "Numbers 0 to THE END!!!",
-                "ordinal level moment",
+                "reminder to fix anything i forgor",
                 "aaaaaaaaaaaaaaaaaaaaaaaaa",
                 "Subscribe to Metroish Productions Inc.: https://www.youtube.com/c/MetroishProductionsInc",
                 "Shoutout to NO! and Mathis R.V. for the inspiration",
