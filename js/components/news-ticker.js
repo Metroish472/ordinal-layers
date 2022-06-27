@@ -3,16 +3,16 @@ Vue.component("news-ticker", {
     {
         return {
             messages: [
-                "modding.net",
-                "layer name moment",
-                "weird themes",
-                "hey, you could make a mod out of this",
-                "when the imp- oh wrong mod",
-                "basically there is a thi- (softcapped)",
-                "incremental thing i guess",
-                "omega layers but steam engine",
-                "mod.js: powering layers",
-                "i ran out of words on my hard drive :("
+                "Numbers 0 to THE END!!!",
+                "ordinal level moment",
+                "aaaaaaaaaaaaaaaaaaaaaaaaa",
+                "Subscribe to Metroish Productions Inc.: https://www.youtube.com/c/MetroishProductionsInc",
+                "Shoutout to NO! and Mathis R.V. for the inspiration",
+                "so anyways i found out that after OL(200) things go really crazy...patience patience",
+                "This is one of the first idle games to increment in Ordinal Levels!",
+                "ey where Super Ordinal Level",
+                "If you don't know what's going on, watch 0 to ENDLESS for almost all of the Ordinal Levels",
+                "help i need idea for a news ticker"
             ],
             currentMessage: "",
             messageIndex: -1
