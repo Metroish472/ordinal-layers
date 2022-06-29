@@ -16,7 +16,7 @@ var mod = {
         ["Ordinal-Layers",
         [
             "+×^#≬,[⊑□\⋱¬♦₁RεωΩxX(.A/⽥θᔦˣÇƱ⊞⊗○𝖀Ꙍ☉ƒ‡ῼὯΨⓍͳ֍𝕰⍰OP␠₱•ρ—⋻⊖₣⊕៳лｃດ&⬲:△㎙已☐・⍏ヘキ⟴þŌ刁口○ብჲユ一௫个Ң⊂ᑂಉ✫☆◻Eる১▵ᗜᗚᗌ⋑⟡悤ⱵB℺⋃πΠ♻⦽◎|⤄⧭√∢∐∏∫∨⅀⊖⊠⟅❃☾⟁㎁🄰ල∑⋂÷▨∮◬⋁ᚖ⧈▥◒🟔🟃🟇🟈Φ▩❖×🞡☩◨⋀ჯф〉ተDع尸ϝ⬓⨎⛎㎋α↓µTNI⯐Я∀aቄⅠιѺ◴ᎧकrL€ѨσœΘ∱⨑ख~ↈ⤽ᑕᗏ⭅∋⚫Э⛋",
-            "𒀆𒀈𒉐",
+            "-=<",
             ["<span class='flipped-v'>∾</span>", "<span class='flipped-v'>∾</span><sup>2</sup>","<span class='flipped-v'>∾</span><sup>3</sup>","<span class='flipped-v'>∾</span><sup>2<sup>2</sup></sup>"]
         ]]
     ],
