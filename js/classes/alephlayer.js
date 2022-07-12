@@ -27,10 +27,10 @@ class AlephLayer
                 level => Decimal.pow(2, level), {
                     maxLevel: 3
                 }),
-            alephBoost2: new AlephUpgrade("Gain more aleph based on the log(log(+)) you have",
+            alephBoost2: new AlephUpgrade("Gain more operators based on the log(log(+)) you have",
                 level => Utils.createValueDilation(Decimal.pow(1e30, level).mul(1e100), 0.01),
                 level => game.layers[0] ? Decimal.pow(new Decimal(1.1).add(level.mul(0.1)), Decimal.max(0, game.layers[0].resource).add(1).log10().add(1).log10()) : new Decimal(1)),
-            betterBetaFormula: new AlephUpgrade("The &beta; Prestige Formula is better",
+            betterBetaFormula: new AlephUpgrade("The × Prestige Formula is better",
                 level => new Decimal(1e90),
                 level => new Decimal(1).add(level.mul(0.12)), {
                     maxLevel: 1,
