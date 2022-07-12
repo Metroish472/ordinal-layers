@@ -34,7 +34,7 @@ const game = {
             level => level.gt(0) ? Math.pow(0.6, level.toNumber() - 1) * 30 : Infinity, null, {
                 getEffectDisplay: effectDisplayTemplates.automator()
             })),
-        autoAleph: new Automator("Auto Aleph", "Automatically Max All Aleph Upgrades", () =>
+        autoAleph: new Automator("Auto Operate", "Automatically Max All Operator Upgrades", () =>
         {
             game.alephLayer.maxAll();
         }, new DynamicLayerUpgrade(level => level + 3, () => null, () => "Decrease the Automator interval",
@@ -95,7 +95,7 @@ const game = {
         new Achievement("Ordinal Level 1 Operators", "Have 1e10 operators", "↑<sub>1</sub>", () => game.alephLayer.aleph.gte("1e10")),
         new Achievement("Googological Operators", "Have 1e100 operators", "↑<sub>2</sub>", () => game.alephLayer.aleph.gte("1e100")),
         new Achievement("Hyperoperators", "Have 1.8e308 operators", "↑<sub>3</sub>", () => game.alephLayer.aleph.gte("1.8e308")),
-        new Achievement("Stacking up", "Perform a hypercompute and restart your progress", "//", () => game.restackLayer.timesReset > 0),
+        new Achievement("Stacking up", "Perform a hypercompute and restart your progress", "&", () => game.restackLayer.timesReset > 0),
         new Achievement("Upgradalicious", "Max all the non-ordinalized upgrades", "↑<sub>↑<sub>↑</sub></sub>", () => (Object.values(game.restackLayer.permUpgrades).filter(u => u.level.gt(0)).length + Object.values(game.restackLayer.permUpgrades).filter(u => u.level.gt(1)).length) == 12),
         new Achievement("Idle^2", "Buy the ordinalized upgrade", "↑<sub>OL<sub>", () => game.restackLayer.metaUpgrade.level.gte(1)),
         new Achievement("No turning back", "Ordinalize and be reborn", "OL", () => game.metaLayer.active),
