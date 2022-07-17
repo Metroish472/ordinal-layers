@@ -93,7 +93,7 @@ const game = {
         new Achievement("You played!", "If you dont have this, you shouldn't exist", "START", () => true),
         new Achievement("A new layer!", "Prestige for the first time", "×", () => game.highestLayer >= 2
         new Achievement("Other Ordinals Await", "Go ^", "^", () => game.highestLayer >= 3
-        new Achievement("Other Ordinals Still Await", "Go #", "#", () => game.highestLayer >= 4
+        new Achievement("Other Ordinals Still Await", "Go #", "C", () => game.highestLayer >= 4
         new Achievement("I wonder what new operators are like", "Start gaining operators", "↑", () => game.alephLayer.isUnlocked()),
         new Achievement("Ordinal Level 1 Operators", "Have 1e10 operators", "↑<sub>1</sub>", () => game.alephLayer.aleph.gte("1e10")),
         new Achievement("Googological Operators", "Have 1e100 operators", "↑<sub>2</sub>", () => game.alephLayer.aleph.gte("1e100")),
