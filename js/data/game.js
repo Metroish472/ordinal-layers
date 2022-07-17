@@ -91,20 +91,30 @@ const game = {
     },
     achievements: [
         new Achievement("You played!", "If you dont have this, you shouldn't exist", "START", () => true),
+        new Achievement("A new layer!", "Prestige for the first time", "×", () => game.highestLayer >= 2
+        new Achievement("Other Ordinals Await", "Go ^", "^", () => game.highestLayer >= 3
+        new Achievement("Other Ordinals Still Await", "Go #", "#", () => game.highestLayer >= 4
         new Achievement("I wonder what new operators are like", "Start gaining operators", "↑", () => game.alephLayer.isUnlocked()),
         new Achievement("Ordinal Level 1 Operators", "Have 1e10 operators", "↑<sub>1</sub>", () => game.alephLayer.aleph.gte("1e10")),
         new Achievement("Googological Operators", "Have 1e100 operators", "↑<sub>2</sub>", () => game.alephLayer.aleph.gte("1e100")),
         new Achievement("Hyperoperators", "Have 1.8e308 operators", "↑<sub>3</sub>", () => game.alephLayer.aleph.gte("1.8e308")),
+        new Achievement("BEAF", "Go ≬", "≬", () => game.highestLayer >= 5
         new Achievement("Stacking up", "Perform a hypercompute and restart your progress", "&", () => game.restackLayer.timesReset > 0),
+        new Achievement("Wait, this isn't Ω-Layers", "Reach Ordinal Layer Ω", "Ω", () => game.highestLayer >= 18
         new Achievement("Upgradalicious", "Max all the non-ordinalized upgrades", "↑<sub>↑<sub>↑</sub></sub>", () => (Object.values(game.restackLayer.permUpgrades).filter(u => u.level.gt(0)).length + Object.values(game.restackLayer.permUpgrades).filter(u => u.level.gt(1)).length) == 12),
-        new Achievement("Idle^2", "Buy the ordinalized upgrade", "↑<sub>OL<sub>", () => game.restackLayer.metaUpgrade.level.gte(1)),
+        new Achievement("It NEVER Ends", "Reach Ordinal Layer ⍰", "⍰", () => game.highestLayer >= 46
+        new Achievement("Hyper^2-Compute", "Buy the ordinalized upgrade", "↑<sub>OL<sub>", () => game.restackLayer.metaUpgrade.level.gte(1)),
         new Achievement("No turning back", "Ordinalize and be reborn", "OL", () => game.metaLayer.active),
+        new Achievement("The moment we've been waiting for", "Reach Ordinal Layer ᚖ (Ordinal Level 136)", "ᚖ", () => game.highestLayer >= 136
+        new Achievement("The Ladder is Singafinite", "Reach layer 1,000 (Ordinal Level 1,000)", "↑<sub>+<sub>", () => game.highestLayer >= 1000
+        new Achievement("OL(OL(1))", "Reach layer 1e10 (Ordinal Level 1e10)", "↑<sub>×<sub>", () => game.highestLayer >= "1e10"
+        new Achievement("Go-Insta-Bility", "Reach layer 1e100 (Ordinal Level Googol)", "✇", () => game.highestLayer >= "1e100"
         new Achievement("Infinity-Insta-Bility", "Reach layer 1.8e308 (Ordinal Level ∞) and finish "+mod.primaryName+mod.secondaryName, "∾", () => game.metaLayer.layer.gte(Infinities[0])),
     ],
     secretAchievements: [
         new Achievement("A very long wait...", "Have a game with over 3 months of time", "...", () => game.timeSpent > 50803200),
         new Achievement("Operation Ordinal", "Have 1e1000 aleph", "↑<sub>π</sub>", () => game.alephLayer.aleph.gte("1e1000")),
-        new Achievement("Who would even need Ordinalize?", "Get ᚖ without ordinalizing", "ᚖᚖᚖᚖᚖ", () => game.highestLayer >= 135 && !game.metaLayer.active),
+        new Achievement("Who would even need Ordinalize?", "Get ᚖ without ordinalizing", "ᚖᚖᚖᚖᚖ", () => game.highestLayer >= 136 && !game.metaLayer.active),
         new Achievement("Anti-Volatility", "Get ≬ without layer volatility upgrade", "≬≬≬≬≬", () => game.highestLayer >= 5 && game.volatility.layerVolatility.level.eq(0)),
     ],
     alephLayer: new AlephLayer(),
